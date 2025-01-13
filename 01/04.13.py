@@ -8,5 +8,5 @@ if len(user_elem.split()) != 1:
 elif user_elem not in list_of_elements:
     print('Данный элемент отсутствует в списке.')
 else:
-        count = list_of_elements.count(user_elem)
-        print(f'Элемент {user_elem} встречается в списке {count} раз')
+    count = list_of_elements.count(user_elem)
+    print(f'Элемент {user_elem} встречается в списке {count} раз')
