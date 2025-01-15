@@ -1,5 +1,5 @@
-user_input = input('Введите строку: ')
+import re
 
-result = user_input.replace(" ", "")
-
-print(result)
+user_input = input('Enter a string: ')
+result = re.sub(r'\s+', '', user_input)
+print(f'String without spaces: {result}')

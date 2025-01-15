@@ -1,5 +1,7 @@
-user_input = input("Введите строку: ")
+user_input = input("Enter a string: ")
 
-formatted_string = user_input.title()
-
-print("Отформатированная строка:", formatted_string)
+if user_input.strip():
+    formatted_string = user_input.title()
+    print("Formatted string:", formatted_string)
+else:
+    print("Empty string entered.")

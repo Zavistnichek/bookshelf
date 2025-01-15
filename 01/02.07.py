@@ -1,9 +1,10 @@
-n1 = float(input('Введите первое число: '))
-n2 = float(input('Введите второе число: '))
-n3 = float(input('Введите третье число: '))
-n4 = float(input('Введите четвёртое число: '))
-n5 = float(input('Введите пятое число: '))
-
-average = (n1 + n2 + n3 + n4 + n5) / 5
-
-print(f'Среднее арфиметическое чисел = {average:.2f}')
+try:
+    n1 = float(input('Enter the first number: '))
+    n2 = float(input('Enter the second number: '))
+    n3 = float(input('Enter the third number: '))
+    n4 = float(input('Enter the fourth number: '))
+    n5 = float(input('Enter the fifth number: '))
+    average = (n1 + n2 + n3 + n4 + n5) / 5
+    print(f'The arithmetic mean of the numbers = {average:.2f}')
+except ValueError:
+    print("Please enter valid numbers.")

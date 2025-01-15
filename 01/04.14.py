@@ -1,10 +1,11 @@
-user_input = input('Введите список элементов через пробел: ').strip()
-user_element = input('Введите элемент для удаления его первого вхождения в список: ').strip()
-
+user_input = input('Enter a list of elements separated by spaces: ').strip()
+user_element = input(
+    'Enter an element to remove its first occurrence from the list: '
+).strip()
 list_of_elements = user_input.split()
 
 try:
     list_of_elements.remove(user_element)
-    print('Обновлённый список: ', list_of_elements)
-except:
-    print(f'Элемент "{user_element}" не найден в списке.')
+    print('Updated list: ', list_of_elements)
+except ValueError:
+    print(f'Element "{user_element}" not found in the list.')

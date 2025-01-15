@@ -1,6 +1,5 @@
-user_input = input('Введите строку: ')
-
-result = ""
-for char in text:
+user_input = input('Enter a string: ')
+result = ''
+for char in user_input:
     result += char * 2
 print(result)
