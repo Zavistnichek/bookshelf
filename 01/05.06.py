@@ -13,5 +13,8 @@ def parse_element(element):
 
 
 user_input = input('Enter the elements of the tuple separated by spaces: ')
+user_index_1 = int(input('Enter the first index for slicing the tuple: '))
+user_index_2 = int(input('Enter the second index for slicing the tuple: '))
 user_tuple = tuple(parse_element(e) for e in user_input.split())
-print('Created tuple:', user_tuple)
+sliced = user_tuple[user_index_1:user_index_2]
+print('Sliced tuple:', sliced)

@@ -14,4 +14,5 @@ def parse_element(element):
 
 user_input = input('Enter the elements of the tuple separated by spaces: ')
 user_tuple = tuple(parse_element(e) for e in user_input.split())
-print('Created tuple:', user_tuple)
+union_tuple = user_tuple * 3
+print('This tuple replicated three times:', union_tuple)
