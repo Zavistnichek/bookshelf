@@ -1,19 +1,7 @@
-def parse_element(element):
-    element = element.strip()
-    if element.isdigit():
-        return int(element)
-    try:
-        return float(element)
-    except ValueError:
-        if element.lower() == 'true':
-            return True
-        elif element.lower() == 'false':
-            return False
-    return element
+from tuple_parser import parse_element
 
-
-user_input = input('Enter the elements of the tuple separated by spaces: ')
-user_tuple = tuple(parse_element(e) for e in user_input.split())
+user_input = input('Enter the elements of the tuple separated by commas: ')
+user_tuple = tuple(parse_element(e) for e in user_input.split(','))
 print(f'Original tuple: {user_tuple}')
 
 try:

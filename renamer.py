@@ -1,6 +1,6 @@
 import os
 
-directory = r"C:\Users\Zavistnichek\projects\test\01"
+directory = r"Hnnnh~"
 
 for filename in os.listdir(directory):
     if filename.endswith(".py"):
