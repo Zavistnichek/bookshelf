@@ -33,4 +33,4 @@ Feel free to contribute by:
 
 ## License
 
-This repository is open-source and free to u-use *shy*, modify, and distribute.
+This repository is open-source and free to **u-use**, modify, and distribute. *Shy*.
