@@ -1,5 +1,7 @@
 def parse_element(element):
     element = element.strip()
+    if not element:
+        return None
     if element.isdigit():
         return int(element)
     try:

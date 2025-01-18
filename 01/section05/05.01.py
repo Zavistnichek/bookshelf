@@ -9,5 +9,7 @@ try:
     else:
         user_tuple = tuple(parse_element(e) for e in user_input.split(','))
         print('Created tuple:', user_tuple)
+except ValueError as ve:
+    print(f"Value error: {ve}")
 except Exception as e:
-    print(f"An error occurred: {e}")
+    print(f"An unexpected error occurred: {e}")
