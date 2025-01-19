@@ -1,3 +1,6 @@
+import ast
+
+
 def parse_element(element):
     element = element.strip()
     if not element:
@@ -11,4 +14,8 @@ def parse_element(element):
             return True
         elif element.lower() == 'false':
             return False
+        try:
+            return ast.literal_eval(element)
+        except (ValueError, SyntaxError):
+            pass
     return element
