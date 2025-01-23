@@ -2,7 +2,7 @@ while True:
     try:
         user_age = int(input("Enter the person's age: "))
         if user_age < 0:
-            print('"Age cannot be negative. Please enter a valid age."')
+            print('Age cannot be negative. Please enter a valid age.')
         elif user_age <= 2:
             print('The person is a toddler (0-2 years old).')
         elif user_age <= 12:
