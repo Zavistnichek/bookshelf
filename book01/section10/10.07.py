@@ -1,5 +1,5 @@
-strings = ['string 1', 'string 2', 'string 3', 'string 4']
-user_input = input('Enter a string: ')
+strings = ["string 1", "string 2", "string 3", "string 4"]
+user_input = input("Enter a string: ")
 found = False
 
 for index, string in enumerate(strings):

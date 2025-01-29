@@ -10,9 +10,9 @@ def parse_element(element):
     try:
         return float(element)
     except ValueError:
-        if element.lower() == 'true':
+        if element.lower() == "true":
             return True
-        elif element.lower() == 'false':
+        elif element.lower() == "false":
             return False
         try:
             return ast.literal_eval(element)

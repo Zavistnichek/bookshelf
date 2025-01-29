@@ -1,4 +1,4 @@
-user_input = input('Enter a string: ')
+user_input = input("Enter a string: ")
 if not user_input:
     print("Error: empty string entered.")
 else:
